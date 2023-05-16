@@ -1,0 +1,33 @@
+/*Styling the background image*/
+.hero 
+    {background-image: url(../images/forest.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30rem;  
+    margin:0;
+    }
+ /*Styling the upper div above the background image and the navigation background*/   
+.upper, .nav 
+    {background-color: rgb(161, 238, 106);
+    padding-top: 1%;
+    padding-bottom: 1%;}   
+
+/*Styling the text inside the upper div*/
+.p-1, .nav a 
+    {color:rgb(18, 58, 22); 
+    font-size: 2rem;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin:0;
+    font-weight: 800;
+    font-family: Impact;}
+
+/*Giving the nav some individual styling*/
+ .nav a {text-decoration: none;
+         padding-left: 10%;
+         padding-right: 2%;}
+
+/*styling the hovering effects on the nav*/
+ a:hover {text-decoration:underline;}
+ a:visited {background-color: rgb(105, 185, 12);}
+             
