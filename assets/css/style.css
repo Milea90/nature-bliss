@@ -1,26 +1,26 @@
 /*Styling the background image*/
 .hero 
-    {background-image: url(../images/forest.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 30rem;  
-    margin:0;
-    }
+ {background-image: url(../images/forest.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30rem;  
+  margin:0;}
+
  /*Styling the upper div above the background image, the footer and the navigation background*/   
 .upper, .nav, .foot 
-    {background-color: rgb(161, 238, 106);
-    padding-top: 1%;
-    padding-bottom: 1%;}   
+ {background-color: rgb(161, 238, 106);
+  padding-top: 1%;
+  padding-bottom: 1%;}   
 
 /*Styling the text inside the upper div and inside the nav*/
 .p-1, .nav a 
-    {color:rgb(18, 58, 22); 
-    font-size: 2rem;
-    padding-left: 15%;
-    padding-right: 15%;
-    margin:0;
-    font-weight: 800;
-    font-family: Impact;}
+ {color:rgb(18, 58, 22); 
+  font-size: 2rem;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin:0;
+  font-weight: 800;
+  font-family: Impact;}
 
 /*Giving the nav some individual styling*/
  .nav a 
@@ -32,13 +32,12 @@
  a:hover {text-decoration:underline;} 
  
  /*Styling the divs on all pages*/
- .intro, .psst 
- {padding-left: 30%;
-  padding-top: 2%;
+ .intro, .psst, .video 
+ {padding-left: 10%;
+  padding-top: 0.5%;
   padding-bottom: 3%;
-  padding-right: 30%;
+  padding-right: 10%;
   background-color: rgb(233, 243, 209);}
-
 
  /*Styling the texts in divs on all pages.*/
  .intro h1 
@@ -62,18 +61,44 @@
  font-size: 1.5rem;}
     
 /*Styling the images of h1 on all pages*/
-.daisy
+.daisy1, .daisy2
 {border-radius: 50%;
  width: 5rem;
  height: 5rem;}
+
+ /*Styling images on all pages*/
+ #women, #lake, #man, #reading
+{width:50%;
+padding-left:25%}
+
+/*Making the youtube video responsive. To accomplish this I have used a code snippet from the website: ostraining.com*/
+.video
+{overflow: hidden;
+padding-bottom: 56.25%;
+position: relative;
+height: 0;}
+
+.video iframe 
+{left: 0;
+ top: 0;
+ height: 100%;
+ width: 100%;
+ position: absolute;}
 
  /*Styling the footer*/
 .foot p
 {color: rgb(18, 58, 22);
  font-family: impact;
  font-size: 1.5rem;
- text-align: center;}
+ text-align: center;}             
 
+/*Adding media queries to make the site more responsive*/
+ @media (max-width:710px) 
+ {.daisy2 {display:none;}}
 
+ @media (max-width:879px){
+ .nav a {font-size: 1rem;
+         padding-left: 5%;
+         padding-right: 1%;}
 
-             
+.p-1 {font-size: 1rem;}}
