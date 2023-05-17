@@ -56,6 +56,11 @@ background-color: rgb(233, 243, 209);}
 font-size: 1.5rem;
 text-align: center;}
 
+#list {
+font-family: impact;
+font-size: 1.5rem;
+    }
+
 .daisy
 {border-radius: 50%;
 width: 5rem;
