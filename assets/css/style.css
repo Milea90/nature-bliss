@@ -23,61 +23,56 @@
     font-family: Impact;}
 
 /*Giving the nav some individual styling*/
- .nav a {text-decoration: none;
-         padding-left: 10%;
-         padding-right: 2%;}
+ .nav a 
+ {text-decoration: none;
+  padding-left: 10%;
+  padding-right: 2%;}
 
 /*styling the hovering effects on the nav*/
- a:hover {text-decoration:underline;}
- a:visited {background-color: rgb(105, 185, 12);}
+ a:hover {text-decoration:underline;} 
+ 
+ /*Styling the divs on all pages*/
+ .intro, .psst 
+ {padding-left: 30%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  padding-right: 30%;
+  background-color: rgb(233, 243, 209);}
 
- /*Styling the divs on home-page*/
- .intro, .psst {
-    padding-left: 30%;
-    padding-top: 2%;
-    padding-bottom: 3%;
-padding-right: 30%;
-background-color: rgb(233, 243, 209);}
 
-
- /*Styling the welcome-text in divs on home-page.*/
+ /*Styling the texts in divs on all pages.*/
  .intro h1 
-    {text-align: center;
-    font-family: impact;
-    font-size: 2.5rem;
-    }
+{text-align: center;
+ font-family: impact;
+ font-size: 2.5rem;}
 
-    .psst h2 {text-align: center;
-             font-family: impact;
-            font-size: 1.7rem;}
+.psst h2 
+{text-align: center;
+ font-family: impact;
+ font-size: 1.7rem;}
 
 .intro p, .psst p 
 {font-family: impact;
-font-size: 1.5rem;
-text-align: center;}
+ font-size: 1.5rem;
+ text-align: center;}
 
-#list {
-font-family: impact;
-font-size: 1.5rem;
-    }
-
+/*Styling the unordered list text*/
+#list 
+{font-family: impact;
+ font-size: 1.5rem;}
+    
+/*Styling the images of h1 on all pages*/
 .daisy
 {border-radius: 50%;
-width: 5rem;
-height: 5rem;}
+ width: 5rem;
+ height: 5rem;}
 
-#reading 
-{
-width: 40rem;
-height: 25rem;
-    }
-
-
+ /*Styling the footer*/
 .foot p
 {color: rgb(18, 58, 22);
-font-family: impact;
-font-size: 1.5rem;
-text-align: center;}
+ font-family: impact;
+ font-size: 1.5rem;
+ text-align: center;}
 
 
 
