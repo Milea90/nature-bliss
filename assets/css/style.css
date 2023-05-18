@@ -6,21 +6,24 @@
   height: 30rem;  
   margin:0;}
 
- /*Styling the upper div above the background image, the footer and the navigation background*/   
-.upper, .nav, .foot 
+ /*Styling the footer and the navigation background*/   
+.nav, .foot 
  {background-color: rgb(161, 238, 106);
   padding-top: 1%;
   padding-bottom: 1%;}   
 
 /*Styling the text inside the upper div and inside the nav*/
 .p-1, .nav a 
- {color:rgb(18, 58, 22); 
+ {color:rgb(21, 94, 28); 
   font-size: 2rem;
   padding-left: 15%;
   padding-right: 15%;
   margin:0;
-  font-weight: 800;
-  font-family: Impact;}
+  font-weight: 500;
+  font-style:Arial;}
+
+  .p-1 
+  {padding-left:2%;}
 
 /*Giving the nav some individual styling*/
  .nav a 
@@ -32,32 +35,49 @@
  a:hover {text-decoration:underline;} 
  
  /*Styling the divs on all pages*/
- .intro, .psst, .video 
+ .intro, .psst, .video, #quiz
  {padding-left: 10%;
   padding-top: 0.5%;
   padding-bottom: 3%;
   padding-right: 10%;
   background-color: rgb(233, 243, 209);}
 
- /*Styling the texts in divs on all pages.*/
+ /*Styling the textcontent in divs on all pages.*/
  .intro h1 
 {text-align: center;
- font-family: impact;
+ font-style: Arial;
  font-size: 2.5rem;}
 
 .psst h2 
 {text-align: center;
- font-family: impact;
+ font-style: Arial;
  font-size: 1.7rem;}
 
-.intro p, .psst p 
-{font-family: impact;
+.intro p, .psst p
+{font-style: Arial;
  font-size: 1.5rem;
  text-align: center;}
 
-/*Styling the unordered list text*/
+ form
+ {display:grid;}
+
+ #quiz h1
+ {font-style: Arial;
+  font-size: 3rem;
+  text-align: center;}
+
+ #quiz p
+ {font-style:Arial;
+  font-size: 1.5rem;
+  text-align: center;}
+
+  #submit
+  {margin-right: 45%;
+   margin-left: 45%;}
+
+/*Styling the unordered list text since this text did not look good centered.*/
 #list 
-{font-family: impact;
+{font-style: Arial;
  font-size: 1.5rem;}
     
 /*Styling the images of h1 on all pages*/
@@ -67,7 +87,7 @@
  height: 5rem;}
 
  /*Styling images on all pages*/
- #women, #lake, #man, #reading
+ #women, #lake, #man, #reading, #feet
 {width:50%;
 padding-left:25%}
 
@@ -88,7 +108,7 @@ height: 0;}
  /*Styling the footer*/
 .foot p
 {color: rgb(18, 58, 22);
- font-family: impact;
+ font-style: Arial;
  font-size: 1.5rem;
  text-align: center;}             
 
@@ -101,4 +121,4 @@ height: 0;}
          padding-left: 5%;
          padding-right: 1%;}
 
-.p-1 {font-size: 1rem;}}
+ .p-1 {font-size: 1rem;}}
