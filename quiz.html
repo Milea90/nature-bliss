@@ -40,7 +40,7 @@
                 <p>
                     Here, we have created a very simple quiz for you to help you get to know yourself and find out what type of
                     outdoor-person you really are. Even if you think you are an indoor-person, this quiz might change
-                    your mind, which is the whole point of the quiz.
+                    your mind (which is the main purpose of this quiz).
                     <br><br>
                     Nature has many faces and has something to offer everyone. This
                     quiz is not bulletproof, but can hopefully guide you into a future spent in nature. Enjoy! 
@@ -54,12 +54,12 @@
           <h1>Quiz-time!</h1>
             <p>Just answer this simple question: Which color is most appealing to you?</p>
 
-            <form action="colors.html" method="get" onsubmit="return">
-             <p>Blue</p> <input type="radio" name="color" value="blue" id="color-box">
-             <p>Green</p> <input type="radio" name="color" value="green" id="color-box">
-             <p>Red</p> <input type="radio" name="color" value="red" id="color-box">
+            <form action="colors.html" method="get" onsubmit="return is_checked()">
+             <p>Blue</p> <input type="radio" aria-label="A checkbox for the color blue." name="color" value="blue" id="color-blue">
+             <p>Green</p> <input type="radio" aria-label="A checkbox for the color green." name="color" value="green" id="color-green">
+             <p>Red</p> <input type="radio" aria-label="A checkbox for the color red." name="color" value="red" id="color-red">
              <br>
-             <input id="submit" type="submit" value="submit">
+             <input id="submit" aria-label="A clickable submit button." type="submit" value="submit">
              </form>
 
         </div> 
