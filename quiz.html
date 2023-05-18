@@ -38,7 +38,7 @@
                 <h1><img class="daisy1" src="assets/images/daisy.png"> Have fun with a quiz! <img class="daisy2"
                         src="assets/images/daisy.png" alt="An image of a daisy."></h1>
                 <p>
-                    Here, we have created a quiz for you to help you get to know yourself and find out what type of
+                    Here, we have created a very simple quiz for you to help you get to know yourself and find out what type of
                     outdoor-person you really are. Even if you think you are an indoor-person, this quiz might change
                     your mind, which is the whole point of the quiz.
                     <br><br>
@@ -48,10 +48,28 @@
                 <img id="women" src="assets/images/women.jpg" alt="An image of three women walking in nature.">
             </div>
         </article>
+
+        <div id="quiz">
+
+          <h1>Quiz-time!</h1>
+            <p>Just answer this simple question: Which color is most appealing to you?</p>
+
+            <form action="colors.html" method="get" onsubmit="return">
+             <p>Blue</p> <input type="radio" name="color" value="blue" id="color-box">
+             <p>Green</p> <input type="radio" name="color" value="green" id="color-box">
+             <p>Red</p> <input type="radio" name="color" value="red" id="color-box">
+             <br>
+             <input id="submit" type="submit" value="submit">
+             </form>
+
+        </div> 
+
     </main>
     <footer class="foot">
         <p>Copyright 2023</p>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
