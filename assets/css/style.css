@@ -35,7 +35,7 @@
  a:hover {text-decoration:underline;} 
  
  /*Styling the divs on all pages*/
- .intro, .psst, .video, #quiz
+ .intro, .psst, .video, #quiz, #contact-form
  {padding-left: 10%;
   padding-top: 0.5%;
   padding-bottom: 3%;
@@ -48,18 +48,15 @@
  font-style: Arial;
  font-size: 2.5rem;}
 
-.psst h2 
+.psst h2
 {text-align: center;
  font-style: Arial;
  font-size: 1.7rem;}
 
-.intro p, .psst p
+.intro p, .psst p, #contact-form p
 {font-style: Arial;
  font-size: 1.5rem;
  text-align: center;}
-
- form
- {display:grid;}
 
  #quiz h1
  {font-style: Arial;
@@ -74,6 +71,9 @@
   #submit
   {margin-right: 45%;
    margin-left: 45%;}
+
+/*Placing the forms in the middle*/
+  form {display: grid;}
 
 /*Styling the unordered list text since this text did not look good centered.*/
 #list 
@@ -104,6 +104,15 @@ height: 0;}
  height: 100%;
  width: 100%;
  position: absolute;}
+
+ /*Styling the contactform*/
+ #name, #email, #msg
+ {margin-left:20%;
+margin-right:20%;}
+
+#send
+{margin-left: 45%;
+margin-right: 45%;}
 
  /*Styling the footer*/
 .foot p

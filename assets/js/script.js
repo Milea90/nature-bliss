@@ -1,3 +1,6 @@
+function quiz_pop()
+{alert("Psst! Take the quiz!");}
+
 function is_checked()
 {
     const blue_checked = document.getElementById("color-blue").checked;
@@ -9,4 +12,16 @@ function is_checked()
      return false;}
      
      else {return true;} 
+}
+
+function contact_form() {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const msg = document.getElementById("msg").value;
+
+    if (name === "" || email === "" || msg === "") {
+        alert("Oops... You did not submit the required information!");
+        return false;}
+
+    else { return true; }
 }
