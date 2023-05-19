@@ -35,7 +35,7 @@
  a:hover {text-decoration:underline;} 
  
  /*Styling the divs on all pages*/
- .intro, .psst, .video, #quiz, #contact-form
+ .intro, .div2, .video, #quiz, #contact-form
  {padding-left: 10%;
   padding-top: 0.5%;
   padding-bottom: 3%;
@@ -48,12 +48,12 @@
  font-style: Arial;
  font-size: 2.5rem;}
 
-.psst h2
+.div2 h2
 {text-align: center;
  font-style: Arial;
  font-size: 1.7rem;}
 
-.intro p, .psst p, #contact-form p
+.intro p, .div2 p, #contact-form p
 {font-style: Arial;
  font-size: 1.5rem;
  text-align: center;}
@@ -114,7 +114,7 @@ margin-right:20%;}
 {margin-left: 45%;
 margin-right: 45%;}
 
- /*Styling the footer*/
+ /*Styling the footer content*/
 .foot p
 {color: rgb(18, 58, 22);
  font-style: Arial;
@@ -131,3 +131,9 @@ margin-right: 45%;}
          padding-right: 1%;}
 
  .p-1 {font-size: 1rem;}}
+
+ @media (max-width:740px){
+ #submit, #send 
+        {width:25%;
+        margin-right:60%;
+        margin-left:40%;}}
