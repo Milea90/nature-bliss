@@ -46,7 +46,7 @@
  font-family: Times;
  font-size: 2.5rem;}
 
-.div2 h2, #quiz h2
+.div2 h2, #quiz h2, #contact-form h2
 {text-align: center;
  font-family: Times;
  font-size: 1.9rem;}
@@ -62,7 +62,7 @@
  margin-left: 45%;}
 
 /*Placing the forms in the middle*/
-  form {display: grid;}
+form {display: grid;}
 
 /*Styling the unordered list text since this text did not look good centered.*/
 #list 
@@ -99,8 +99,8 @@
  {margin-left:20%;
   margin-right:20%;}
 
-#send
-{margin-left: 45%;
+ #send
+ {margin-left: 45%;
  margin-right: 45%;}
 
  /*Styling the footer content*/
