@@ -12,7 +12,6 @@
     <meta name="author" content="Milea Tegeus">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Nature Bliss</title>
-
 </head>
 
 <body>
@@ -50,7 +49,6 @@
         </article>
 
         <div id="quiz">
-
           <h2>Quiz-time!</h2>
             <p>Please answer this simple question:
                 <br>
@@ -58,17 +56,18 @@
                 Which color is most appealing to you?</p>
                 <br>
 
-            <form action="quiz-answer.html" method="GET" onsubmit="return is_checked()">
+                <!--To create this form, I used a tutorial on Youtube. Read more in README.-->
+
+          <form action="quiz-answer.html" method="GET" onsubmit="return is_checked()">
              <p>Blue</p> <input type="radio" aria-label="A checkbox for the color blue." name="color" value="blue" id="color-blue">
              <p>Green</p> <input type="radio" aria-label="A checkbox for the color green." name="color" value="green" id="color-green">
              <p>Red</p> <input type="radio" aria-label="A checkbox for the color red." name="color" value="red" id="color-red">
              <br>
             <input id="submit" aria-label="A clickable submit button." type="submit" value="Submit">
-             </form>
-
+          </form>
         </div> 
-
     </main>
+
     <footer class="foot">
         <p>Copyright 2023</p>
     </footer>

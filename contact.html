@@ -12,12 +12,11 @@
     <meta name="author" content="Milea Tegeus">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Nature Bliss</title>
-
 </head>
 
 <body>
     <div class="upper">
-        <p class="p-1">Nature and fresh air does not cost anything. Use it.</p>
+        <p class="p-1">Nature and fresh air does not cost anything. Use them.</p>
     </div>
     <div class="hero"></div>
 
@@ -47,17 +46,20 @@
         <article>
             <div id="contact-form">
             
-                <h2>Fill in the information required.</h2>
-                <form action="contact-answer.html" method="GET" onsubmit="return contact_form()">
-                   <p>Your first and last name:</p> <input type="text" aria-label="A blank space to write your name." placeholder="Your name" id="name"><br>
+            <h2>Fill in the information required.</h2>
+
+            <!--To create this form, I used a tutorial on Youtube. Read more in README.-->
+
+             <form action="contact-answer.html" method="GET" onsubmit="return contact_form()">
+                <p>Your first and last name:</p> <input type="text" aria-label="A blank space to write your name." placeholder="Your name" id="name"><br>
                 <p>Your email-address:</p> <input type="text" aria-label="A blank space to write your email." placeholder="Your email" id="email"><br>
                 <p>Your message to us:</p> <textarea rows="10" id="msg" aria-label="A blank space to write your message." placeholder="Write a message" cols="50"></textarea><br>
                 <input type="submit" value="Send" id="send" aria-label="A clickable submit button.">
-
-                </form>
+             </form>
             </div>
         </article>
     </main>
+
     <footer class="foot">
         <p>Copyright 2023</p>
     </footer>
