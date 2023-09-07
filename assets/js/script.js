@@ -1,18 +1,24 @@
 //This function is made from a tutorial on Youtube. Read more in README.//
-function quiz_pop()
-{alert("Psst! Take the quiz!");}
+function game_pop()
+{alert("Psst! Play the game!");}
 
 //This function is made from a tutorial on Youtube. Read more in README.//
 function is_checked(){
-    const blue_checked = document.getElementById("color-blue").checked;
-    const green_checked = document.getElementById("color-green").checked;
-    const red_checked = document.getElementById("color-red").checked;
+    const yes_checked = document.getElementById("yes").checked;
+    const no_checked = document.getElementById("no").checked;
+
+    if(yes_checked === true)
+    return <a href="question-answer-yes.html"></a>
+    
+    if(no_checked === true)
+    return <a href="question-answer-no.html"></a>
    
-    if(blue_checked === false && green_checked === false && red_checked === false)
+    if(yes_checked === false && no_checked === false)
     {alert("Oops... You did not select an option!");
     return false;}
      
-    else {return true;}}
+    else {return true;}} 
+
 
 //This function is made from a tutorial on Youtube. Read more in README.//    
 function contact_form() {

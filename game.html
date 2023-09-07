@@ -25,7 +25,7 @@
             <div class="nav">
                 <a href="index.html">Home</a>
                 <a href="the-bliss.html">The bliss of Nature</a>
-                <a href="quiz.html">Take a Quiz</a>
+                <a href="game.html">Play a Game</a>
                 <a href="contact.html">Contact</a>
             </div>
         </nav>
@@ -34,34 +34,52 @@
     <main>
         <article>
             <div class="intro">
-                <h1><img class="daisy1" src="assets/images/daisy.png" alt="An image of a daisy."> Have fun with a quiz! <img class="daisy2"
+                <h1><img class="daisy1" src="assets/images/daisy.png" alt="An image of a daisy."> Have fun with a game! <img class="daisy2"
                         src="assets/images/daisy.png" alt="An image of a daisy."></h1>
                 <p>
-                    Here, we have created a very simple quiz for you to help you get to know yourself and find out what type of
-                    outdoor-person you really are. Even if you think you are an indoor-person, this quiz might change
-                    your mind (which is the main purpose of this quiz).
-                    <br><br>
-                    Nature has many faces and has something to offer everyone. This
-                    quiz is not bulletproof, but can hopefully guide you into a future spent in nature. Enjoy! 
+                    Here, we have created a very simple game for you to play. Spin the wheel and see what type of activity nature has for you today. 
+                    You HAVE to do what the wheel tells you to do TODAY. Otherwise, bad things will happen...
                 </p>
                 <img id="women" src="assets/images/women.jpg" alt="An image of three women walking in nature.">
             </div>
         </article>
 
-        <div id="quiz">
-          <h2>Quiz-time!</h2>
-            <p>Please answer this simple question:
-                <br>
-                <br>
-                Which color is most appealing to you?</p>
-                <br>
+        <!--This is the spinning wheel game that I created using CodeWithRandom-->
+         <button id="spin">Spin</button>
+    <span class="pin"></span>
+<div class="wheel">
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="three">3</div>
+    <div class="four">4</div>
+    <div class="five">5</div>
+    <div class="six">6</div>
+    <div class="seven">7</div>
+    <div class="eight">8</div>
+</div>
+<div class="activities">
+<p> 
+ <ol>
+    1 = Take a powerwalk to a park!
+    2 = Run a mile in the nearest forest!
+    3 = DO IT ALL!
+    4 = Go for a bike-ride whereever you prefer!
+    5 = DO IT ALL!
+    6 = Go for a swim in the nearest lake.
+    7 = DO IT ALL!
+    8= Go hiking an hour!
+ </p>   
+</h3>
+</div>
+
+        <div id="question">
+          <h2>Are you hooked on nature yet?</h2>
 
                 <!--To create this form, I used a tutorial on Youtube. Read more in README.-->
 
-          <form action="quiz-answer.html" method="GET" onsubmit="return is_checked()">
-             <p>Blue</p> <input type="radio" aria-label="A checkbox for the color blue." name="color" value="blue" id="color-blue">
-             <p>Green</p> <input type="radio" aria-label="A checkbox for the color green." name="color" value="green" id="color-green">
-             <p>Red</p> <input type="radio" aria-label="A checkbox for the color red." name="color" value="red" id="color-red">
+          <form action="question-answer-yes.html" method="GET" onsubmit="return is_checked()">
+             <p>Yes</p> <input type="radio" aria-label="A checkbox for the answer yes." name="check" value="yes" id="yes">
+             <p>No</p> <input type="radio" aria-label="A checkbox for the answer no." name="check" value="no" id="no">
              <br>
             <input id="submit" aria-label="A clickable submit button." type="submit" value="Submit">
           </form>
