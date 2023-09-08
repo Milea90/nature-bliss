@@ -3,8 +3,8 @@
 This website is a tribute to nature. I love being outside and I wanted to share my love for nature with others. Also, the website is meant to be a bit selling. 
 If nature in itself was a sellable product, this is how I would advertise it. 
 
-The main goal and purpose of the website is to make people (who may not be a fan of nature) like nature almost as much as I do. I hope to achieve more activities
-outside instead of being inside in front of a screen. Therefore, the site contains a simple quiz to inspire people to spend more time outside.
+The main goal and purpose of the website is to make people (who may not be a fan of nature) like nature almost as much as I do. As a user, they would be tempted to do more things outside so that they can enjoy all the good things nature has to give. The user can get many benefits from it, such as better health. The website should achieve more activities
+outside for users instead of being inside in front of a screen. Therefore, the site contains a simple game to inspire people to spend more time outside.
 ![](/assets/readme-images/resp.png "")
 
 
@@ -24,12 +24,11 @@ At the bottom of "The bliss of Nature" page, there is a YouTube video with a vid
 When "The bliss of Nature" page has loaded, a pop-up shows up, reminding the user to take a quiz.
 ![](/assets/readme-images/pop-up.png "")
 
-The "Take a Quiz" page has a single-question quiz and when submitting the answer, the user is taken to a new html page. The quiz is supposed to make a user more interested in nature depending on their personality type.
-![](/assets/readme-images/quiz.png "")
-![](/assets/readme-images/quiz1.png "")
+The "Game-page is just an informative page about a game the user can play and the rules. There is a link where the user can click to get to the gaming page.
+![](/assets/readme-images/game.png "")
 
-This is the page the user will see when submitting the quiz:
-![](/assets/readme-images/congrats.png "")
+This is the page with the game with a spinning wheel. Click spin and the wheel will spin and stop on a random number. There is also a navigation that will take the user back.
+![](/assets/readme-images/wheel.png "")
 
 On the contact page, there is a contact form. Its purpose is to make the user want to take action towards a life spent more outdoors. 
 ![](/assets/readme-images/con.png "")
@@ -40,9 +39,12 @@ When the contact form has been submitted, the user will see this page:
 
 ## Features I would like to add
 I wanted to create a zoom effect on the hero-image, but I was afraid that it would ruin the responsiveness and since I did not have enough time to fix all that, I had to skip it. 
-I also wanted to create a more advance quiz, but the time was not enough for that. 
-I was actually planning to add an event listener so that when users used the Enter key, the quiz would be submitted, but I realized it worked without it.
+
+I would like the user to just be able to click once on the "spin" and then the game would stop.
+
 I could (and have) spend a lot of time to refine the styling and layout of the website, and could probably change a few things here and there to improve it further. 
+
+Better navigation on the spinning wheel page. 
 
 ## Testing
 To make sure the website works as expected, I have used several tools: WC3 CSS validator, JShint.com and W3 html validator. I also used Lighthouse to check the accessibility score and used the devtools when making the website more responsive. I have checked all pages, for example the "The bliss of Nature" page as you can see below.
@@ -54,7 +56,7 @@ Html validation:
 ![](/assets/readme-images/html-check.png "")
 
 JavaS validation:
-![](/assets/readme-images/js-check.png "")
+![](/assets/readme-images/jstest.png "")
 
 Lighthouse validation:
 ![](/assets/readme-images/access.png "")
@@ -68,11 +70,9 @@ I wanted to use a different font-style, mainly papyrus. But for some reason it d
 
 I realized that the hover effect on the nav was a bit off due to the margins/paddings too late in the project and had no time to fix it.
 
-The quiz ended up being very simple. I ended up with one question with three options and one neutral response to all the different options. In other words, no matter which color the user choose, the same response will be evident. 
-At first, the goal was to create a quiz using radio buttons, since the user can only choose one option. (I did not want to create a ton of different html pages depending on the user's answers in check boxes.) I wanted to create a quiz with three questions, with three options each, using only radio buttons, and then three form actions in response to the user's answers. Off course, there could be many different results depending on the users answers, but I wanted to keep it very basic. The goal was to only create three different and neutral responses according to the first question. I didn't know it wasn't possible to create more than one form action for one form. I tried solving it by creating three different forms and only using one submit button and by doing so, creating a totally "fake" form. But since there would be many different options, I had to be very creative with the one form action page that I had to work with to make it fit for all the different possible answers. So I decided to just have one single question.
-However, this problem is not really accurate, since quizzes are not necessarily created like this. But I wanted the quiz to be as real as possible with the amount of time and resources I had to create it.  
+The wheel was very difficult to work with. Since it had its own styling, I had to create a new page for it and include the CSS directly in that HTML page. Otherwise the css for the wheel would effect all the other css on the page. It was also impossible to make it responsive. I tried both changing from absolute to relative units, but that did not work. I also tried solving it with mediaqueries but it did not look good at all.
 
-I also wanted the options to be in a row instead of on top of each other. I tried adjusting it with paddings and margins all over the place, but it did not work. So I tried the "display:grid" which made them stack on top of each other. Since the text content on the page is centered, I was ok with the result, even if that was not the purpose. I'm sure it's an easy fix once I have the time to look further into it.
+The navigation on the wheel page was very difficult to create due to the existing css on the wheel. The navigation had a very bad impact on the layout on the page. Therefor it ended up very small.
 
 I wanted to create an active selector to the menu. When a page/link in the menu was active, I wanted to highlight it with a different color. But I was not able to make it work. I researched it and tried different techniques, but had to skip it.
 
@@ -93,7 +93,8 @@ The images comes from pixabay.com.
 
 ### Content
 
-The code for the quiz (in html and JavaScript) was completely made thanks to these YouTube videos:  https://www.youtube.com/watch?v=WR88nGbXCKY  &  https://www.youtube.com/watch?v=WmJIbPNb9Ac
+The code for the spinning wheel was made thanks to this page: https://www.codewithrandom.com/2023/05/04/spin-wheel-using-javascript/
+I used that as a template and then changed the names for divs and a couple of other things to make it fit the purpose.
 
 The code for creating the contact form was made thanks to this YouTube video: https://www.youtube.com/watch?v=y5UEXujzSag
 
